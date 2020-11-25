@@ -1,0 +1,79 @@
+[Tue, 24 Nov 2020 21:48:29 +0700] [localhost] [127.0.0.1] [User Notice(1024): SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 85]
+[Tue, 24 Nov 2020 21:48:29 +0700] [localhost] [127.0.0.1] [User Error(256): Sorry! Could not connect to data server] [FILE: /includes/mainfile.php] [LINE: 249]
+[Tue, 24 Nov 2020 23:05:55 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Object of class NukeViet\Core\Database could not be converted to string in /var/www/html/learn_nukeviet/includes/footer.php:19
+Stack trace:
+#0 /var/www/html/learn_nukeviet/modules/Security/funcs/main.php(31): include()
+#1 /var/www/html/learn_nukeviet/index.php(355): require('/var/www/html/l...')
+#2 {main}
+  thrown] [FILE: /includes/footer.php] [LINE: 19]
+[Tue, 24 Nov 2020 23:40:26 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Call to undefined function hash_password() in /var/www/html/learn_nukeviet/modules/Security/funcs/main.php:29
+Stack trace:
+#0 /var/www/html/learn_nukeviet/index.php(355): require()
+#1 {main}
+  thrown] [FILE: /modules/Security/funcs/main.php] [LINE: 29]
+[Tue, 24 Nov 2020 23:40:44 +0700] [localhost] [127.0.0.1] [Warning(2): Illegal string offset 'type'] [FILE: /modules/Security/funcs/main.php] [LINE: 38]
+[Tue, 24 Nov 2020 23:40:44 +0700] [localhost] [127.0.0.1] [Warning(2): Illegal string offset 'type'] [FILE: /modules/Security/funcs/main.php] [LINE: 42]
+[Tue, 24 Nov 2020 23:40:44 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: type] [FILE: /modules/Security/funcs/main.php] [LINE: 38]
+[Tue, 24 Nov 2020 23:40:44 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: type] [FILE: /modules/Security/funcs/main.php] [LINE: 42]
+[Tue, 24 Nov 2020 23:41:09 +0700] [localhost] [127.0.0.1] [Warning(2): Illegal string offset 'type'] [FILE: /modules/Security/funcs/main.php] [LINE: 40]
+[Tue, 24 Nov 2020 23:41:09 +0700] [localhost] [127.0.0.1] [Warning(2): Illegal string offset 'type'] [FILE: /modules/Security/funcs/main.php] [LINE: 44]
+[Tue, 24 Nov 2020 23:41:09 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: type] [FILE: /modules/Security/funcs/main.php] [LINE: 40]
+[Tue, 24 Nov 2020 23:41:09 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: type] [FILE: /modules/Security/funcs/main.php] [LINE: 44]
+[Tue, 24 Nov 2020 23:58:50 +0700] [localhost] [127.0.0.1] [Warning(2): Illegal string offset 'type'] [FILE: /modules/Security/funcs/main.php] [LINE: 39]
+[Tue, 24 Nov 2020 23:59:46 +0700] [localhost] [127.0.0.1] [Warning(2): Illegal string offset 'type'] [FILE: /modules/Security/funcs/main.php] [LINE: 43]
+[Tue, 24 Nov 2020 23:59:46 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: type] [FILE: /modules/Security/funcs/main.php] [LINE: 39]
+[Tue, 24 Nov 2020 23:59:46 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: type] [FILE: /modules/Security/funcs/main.php] [LINE: 43]
+[Wed, 25 Nov 2020 00:24:05 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Class 'Smarty' not found in /var/www/html/learn_nukeviet/modules/Security/funcs/main.php:58
+Stack trace:
+#0 /var/www/html/learn_nukeviet/index.php(355): require()
+#1 {main}
+  thrown] [FILE: /modules/Security/funcs/main.php] [LINE: 58]
+[Wed, 25 Nov 2020 00:25:15 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Class 'Smarty' not found in /var/www/html/learn_nukeviet/modules/Security/funcs/main.php:57
+Stack trace:
+#0 /var/www/html/learn_nukeviet/index.php(355): require()
+#1 {main}
+  thrown] [FILE: /modules/Security/funcs/main.php] [LINE: 57]
+[Wed, 25 Nov 2020 00:37:00 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: layout_file] [FILE: /modules/Security/funcs/main.php] [LINE: 54]
+[Wed, 25 Nov 2020 00:37:00 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Class 'SmartyException' not found in /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_templatebase.php:177
+Stack trace:
+#0 /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_templatebase.php(116): Smarty_Internal_TemplateBase->_execute()
+#1 /var/www/html/learn_nukeviet/modules/Security/funcs/main.php(54): Smarty_Internal_TemplateBase->fetch()
+#2 /var/www/html/learn_nukeviet/index.php(355): require('/var/www/html/l...')
+#3 {main}
+  thrown] [FILE: /includes/sysplugins/smarty_internal_templatebase.php] [LINE: 177]
+[Wed, 25 Nov 2020 00:38:03 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Class 'SmartyException' not found in /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_template.php:195
+Stack trace:
+#0 /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_templatebase.php(232): Smarty_Internal_Template->render()
+#1 /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_templatebase.php(116): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/learn_nukeviet/modules/Security/funcs/main.php(54): Smarty_Internal_TemplateBase->fetch()
+#3 /var/www/html/learn_nukeviet/index.php(355): require('/var/www/html/l...')
+#4 {main}
+  thrown] [FILE: /includes/sysplugins/smarty_internal_template.php] [LINE: 195]
+[Wed, 25 Nov 2020 00:38:47 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Class 'Smarty_Template_Compiled' not found in /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_template.php:604
+Stack trace:
+#0 /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_template.php(214): Smarty_Internal_Template->loadCompiled()
+#1 /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_templatebase.php(232): Smarty_Internal_Template->render()
+#2 /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_templatebase.php(116): Smarty_Internal_TemplateBase->_execute()
+#3 /var/www/html/learn_nukeviet/modules/Security/funcs/main.php(54): Smarty_Internal_TemplateBase->fetch()
+#4 /var/www/html/learn_nukeviet/index.php(355): require('/var/www/html/l...')
+#5 {main}
+  thrown] [FILE: /includes/sysplugins/smarty_internal_template.php] [LINE: 604]
+[Wed, 25 Nov 2020 00:43:08 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: layout_file] [FILE: /modules/Security/funcs/main.php] [LINE: 56]
+[Wed, 25 Nov 2020 00:43:19 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Class 'Smarty_Internal_Undefined' not found in /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_extension_handler.php:168
+Stack trace:
+#0 /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_extension_handler.php(130): Smarty_Internal_Extension_Handler->__get()
+#1 /var/www/html/learn_nukeviet/includes/sysplugins/smarty_internal_data.php(290): Smarty_Internal_Extension_Handler->_callExternalMethod()
+#2 /var/www/html/learn_nukeviet/modules/Security/funcs/main.php(54): Smarty_Internal_Data->__call()
+#3 /var/www/html/learn_nukeviet/index.php(355): require('/var/www/html/l...')
+#4 {main}
+  thrown] [FILE: /includes/sysplugins/smarty_internal_extension_handler.php] [LINE: 168]
+[Wed, 25 Nov 2020 00:46:41 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: layout_file] [FILE: /modules/Security/funcs/main.php] [LINE: 62]
+[Wed, 25 Nov 2020 00:47:13 +0700] [localhost] [127.0.0.1] [Warning(2): file_get_contents(/var/www/html/learn_nukeviet/themes/qldt_default/layout/main.tpl): failed to open stream: No such file or directory] [FILE: /includes/xtemplate.class.php] [LINE: 1395]
+[Wed, 25 Nov 2020 00:50:33 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: content] [FILE: /modules/Security/funcs/main.php] [LINE: 74]
+[Wed, 25 Nov 2020 00:56:46 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Class 'XTemplate' not found in /var/www/html/learn_nukeviet/themes/qldt_default/theme.php:67
+Stack trace:
+#0 /var/www/html/learn_nukeviet/modules/Security/funcs/main.php(74): nv_site_theme()
+#1 /var/www/html/learn_nukeviet/index.php(355): require('/var/www/html/l...')
+#2 {main}
+  thrown] [FILE: /themes/qldt_default/theme.php] [LINE: 67]
+[Wed, 25 Nov 2020 01:00:21 +0700] [localhost] [127.0.0.1] [Warning(2): require_once(Smarty.class.php): failed to open stream: No such file or directory] [FILE: /modules/Security/funcs/main.php] [LINE: 67]

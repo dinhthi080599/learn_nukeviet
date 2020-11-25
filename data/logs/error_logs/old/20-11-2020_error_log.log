@@ -1,0 +1,15 @@
+[Fri, 20 Nov 2020 17:25:48 +0700] [localhost] [::1] [Warning(2): ftp_login() expects parameter 1 to be resource, bool given] [FILE: /install/index.php] [LINE: 188]
+[Fri, 20 Nov 2020 17:25:48 +0700] [localhost] [::1] [Warning(2): ftp_close() expects parameter 1 to be resource, bool given] [FILE: /install/index.php] [LINE: 281]
+[Fri, 20 Nov 2020 17:26:31 +0700] [localhost] [::1] [User Notice(1024): SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 85]
+[Fri, 20 Nov 2020 23:56:00 +0700] [localhost] [::1] [Error(1): Uncaught Error: Call to undefined function test() in /var/www/html/learn_nukeviet/modules/news/funcs/main.php:10
+Stack trace:
+#0 /var/www/html/learn_nukeviet/index.php(355): require()
+#1 {main}
+  thrown] [FILE: /modules/news/funcs/main.php] [LINE: 10]
+[Sat, 21 Nov 2020 00:06:38 +0700] [localhost] [::1] [Error(1): Uncaught Error: Call to undefined function pr() in /var/www/html/learn_nukeviet/modules/news/funcs/main.php:11
+Stack trace:
+#0 /var/www/html/learn_nukeviet/index.php(355): require()
+#1 {main}
+  thrown] [FILE: /modules/news/funcs/main.php] [LINE: 11]
+[Sat, 21 Nov 2020 00:12:09 +0700] [localhost] [::1] [Warning(2): Use of undefined constant APACHE_RUN_DIR - assumed 'APACHE_RUN_DIR' (this will throw an Error in a future version of PHP)] [FILE: /modules/news/funcs/main.php] [LINE: 11]
+[Sat, 21 Nov 2020 00:12:57 +0700] [localhost] [::1] [Notice(8): Undefined index: language] [FILE: /modules/news/funcs/main.php] [LINE: 11]
