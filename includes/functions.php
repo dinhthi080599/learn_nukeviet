@@ -309,6 +309,50 @@ function pr($input)
 }
 
 /**
+ * set_flash_data
+ *
+ * @param string $name #tên session
+ * @param string $value #giá trị session
+ * @return
+ */
+function set_flash_data($name, $value)
+{
+    global $nv_Request;
+    $nv_Request->set_Session($name, $value);
+}
+
+/**
+ * set_flash_data
+ *
+ * @param string $name #tên session
+ * @param string $value #giá trị session
+ * @return
+ */
+function get_flash_data($name)
+{
+    global $global_config, $nv_Request;
+    $name = $global_config['session_prefix'] . '_'. $name;
+    $value = $_SESSION[$name];
+    unset($_SESSION[$name]);
+    return $value;
+}
+/**
+ * set_flash_data
+ *
+ * @param string $name #tên session
+ * @param string $value #giá trị session
+ * @return
+ */
+function get_session($name){
+    global $global_config, $nv_Request;
+    $name = $global_config['session_prefix'] . '_'. $name;
+    $value = $_SESSION[$name];
+    return $value;
+}
+
+
+
+/**
  * nv_function_exists()
  *
  * @param string $funcName

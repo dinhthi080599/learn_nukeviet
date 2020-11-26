@@ -1,0 +1,54 @@
+[Thu, 26 Nov 2020 09:27:35 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: nv_Request] [FILE: /includes/functions.php] [LINE: 320]
+[Thu, 26 Nov 2020 09:27:35 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Call to a member function set_Session() on null in /var/www/html/learn_nukeviet/includes/functions.php:320
+Stack trace:
+#0 /var/www/html/learn_nukeviet/modules/login/funcs/main.php(25): set_flash_data()
+#1 /var/www/html/learn_nukeviet/index.php(353): require('/var/www/html/l...')
+#2 {main}
+  thrown] [FILE: /includes/functions.php] [LINE: 320]
+[Thu, 26 Nov 2020 09:29:07 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: passwỏd] [FILE: /modules/login/funcs/main.php] [LINE: 22]
+[Thu, 26 Nov 2020 09:40:56 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: login_false] [FILE: /includes/functions.php] [LINE: 333]
+[Thu, 26 Nov 2020 09:41:53 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: login_false] [FILE: /includes/functions.php] [LINE: 334]
+[Thu, 26 Nov 2020 09:42:03 +0700] [localhost] [127.0.0.1] [Notice(8): Trying to access array offset on value of type bool] [FILE: /modules/login/funcs/main.php] [LINE: 24]
+[Thu, 26 Nov 2020 09:42:03 +0700] [localhost] [127.0.0.1] [Warning(2): hash_equals(): Expected known_string to be a string, null given] [FILE: /vendor/vinades/nukeviet/Core/Encryption.php] [LINE: 114]
+[Thu, 26 Nov 2020 09:42:42 +0700] [localhost] [127.0.0.1] [User Error(256): Your request is blocked] [FILE: /vendor/vinades/nukeviet/Core/Request.php] [LINE: 451]
+[Thu, 26 Nov 2020 09:42:45 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: login_false] [FILE: /includes/functions.php] [LINE: 335]
+[Thu, 26 Nov 2020 09:51:19 +0700] [localhost] [127.0.0.1] [User Error(256): Warning: Headers already sent] [FILE: /vendor/vinades/nukeviet/Core/Request.php] [LINE: 570]
+[Thu, 26 Nov 2020 09:58:28 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: nv4s_q71FyH_login_false] [FILE: /includes/functions.php] [LINE: 336]
+[Thu, 26 Nov 2020 10:00:54 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Call to a member function decodeCookie() on null in /var/www/html/learn_nukeviet/includes/functions.php:335
+Stack trace:
+#0 /var/www/html/learn_nukeviet/modules/login/funcs/main.php(15): get_flash_data()
+#1 /var/www/html/learn_nukeviet/index.php(353): require('/var/www/html/l...')
+#2 {main}
+  thrown] [FILE: /includes/functions.php] [LINE: 335]
+[Thu, 26 Nov 2020 10:02:25 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: _nv_Request] [FILE: /includes/functions.php] [LINE: 337]
+[Thu, 26 Nov 2020 10:02:25 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Call to a member function decodeCookie() on null in /var/www/html/learn_nukeviet/includes/functions.php:337
+Stack trace:
+#0 /var/www/html/learn_nukeviet/modules/login/funcs/main.php(15): get_flash_data()
+#1 /var/www/html/learn_nukeviet/index.php(353): require('/var/www/html/l...')
+#2 {main}
+  thrown] [FILE: /includes/functions.php] [LINE: 337]
+[Thu, 26 Nov 2020 10:05:31 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Call to private method NukeViet\Core\Request::get_value() from context '' in /var/www/html/learn_nukeviet/includes/functions.php:336
+Stack trace:
+#0 /var/www/html/learn_nukeviet/modules/login/funcs/main.php(15): get_flash_data()
+#1 /var/www/html/learn_nukeviet/index.php(353): require('/var/www/html/l...')
+#2 {main}
+  thrown] [FILE: /includes/functions.php] [LINE: 336]
+[Thu, 26 Nov 2020 10:39:56 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' . NV_AUTHORS_GLOBALTABLE . ' t1, ' . NV_USERS_GLOBALTABLE . ' t2
+    WHERE t1.' at line 3 in /var/www/html/learn_nukeviet/vendor/vinades/nukeviet/Core/Database.php:495
+Stack trace:
+#0 /var/www/html/learn_nukeviet/vendor/vinades/nukeviet/Core/Database.php(495): PDO->query()
+#1 /var/www/html/learn_nukeviet/modules/login/funcs/main.php(27): NukeViet\Core\Database->query()
+#2 /var/www/html/learn_nukeviet/index.php(353): require('/var/www/html/l...')
+#3 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 495]
+[Thu, 26 Nov 2020 10:44:19 +0700] [localhost] [127.0.0.1] [Notice(8): Trying to access array offset on value of type bool] [FILE: /modules/login/funcs/main.php] [LINE: 28]
+[Thu, 26 Nov 2020 10:46:20 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_id] [FILE: /modules/login/funcs/main.php] [LINE: 30]
+[Thu, 26 Nov 2020 10:46:20 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_agent] [FILE: /modules/login/funcs/main.php] [LINE: 36]
+[Thu, 26 Nov 2020 10:46:20 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_ip] [FILE: /modules/login/funcs/main.php] [LINE: 38]
+[Thu, 26 Nov 2020 10:46:20 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_login] [FILE: /modules/login/funcs/main.php] [LINE: 40]
+[Thu, 26 Nov 2020 10:52:42 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_login] [FILE: /modules/login/funcs/main.php] [LINE: 42]
+[Thu, 26 Nov 2020 10:53:20 +0700] [localhost] [127.0.0.1] [Notice(8): Trying to access array offset on value of type bool] [FILE: /modules/login/funcs/main.php] [LINE: 29]
+[Thu, 26 Nov 2020 11:07:43 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: nv4s_q71FyH_admin] [FILE: /includes/functions.php] [LINE: 349]
+[Thu, 26 Nov 2020 11:08:14 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_agent] [FILE: /modules/login/funcs/main.php] [LINE: 43]
+[Thu, 26 Nov 2020 11:08:14 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_ip] [FILE: /modules/login/funcs/main.php] [LINE: 45]
+[Thu, 26 Nov 2020 11:08:14 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_login] [FILE: /modules/login/funcs/main.php] [LINE: 47]

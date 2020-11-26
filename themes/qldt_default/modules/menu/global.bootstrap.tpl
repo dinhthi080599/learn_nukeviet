@@ -22,6 +22,9 @@
             <li {TOP_MENU.current} role="presentation"><a class="dropdown-toggle" {TOP_MENU.dropdown_data_toggle} href="{TOP_MENU.link}" role="button" aria-expanded="false" title="{TOP_MENU.note}"{TOP_MENU.target}> <!-- BEGIN: icon --> <img src="{TOP_MENU.icon}" />&nbsp; <!-- END: icon --> {TOP_MENU.title_trim}<!-- BEGIN: has_sub --> <strong class="caret">&nbsp;</strong>
                 <!-- END: has_sub --></a> <!-- BEGIN: sub --> {SUB} <!-- END: sub --></li>
             <!-- END: top_menu -->
+			<li>
+                <a href="http://localhost/learn_nukeviet/index.php?language=vi&nv=login&op=rss" onclick="return confirm('Bạn chắc chắn muốn đăng xuất?')">Đăng xuất</a>
+            </li>
         </ul>
     </div>
 </div>

@@ -63,3 +63,29 @@ Stack trace:
   thrown] [FILE: /modules/Security/funcs/main.php] [LINE: 36]
 [Wed, 25 Nov 2020 15:18:07 +0700] [localhost] [127.0.0.1] [Warning(2): require_once(/var/www/html/learn_nukeviet/includes/class/pclzip.class.php): failed to open stream: No such file or directory] [FILE: /modules/nvtools/funcs/main.php] [LINE: 533]
 [Wed, 25 Nov 2020 15:32:29 +0700] [localhost] [127.0.0.1] [User Error(256): Your request is blocked] [FILE: /vendor/vinades/nukeviet/Core/Request.php] [LINE: 451]
+[Wed, 25 Nov 2020 21:34:11 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: site_mods] [FILE: /includes/functions.php] [LINE: 2107]
+[Wed, 25 Nov 2020 23:24:22 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Class 'Smarty' not found in /var/www/html/learn_nukeviet/modules/login/funcs/main.php:14
+Stack trace:
+#0 /var/www/html/learn_nukeviet/index.php(353): require()
+#1 {main}
+  thrown] [FILE: /modules/login/funcs/main.php] [LINE: 14]
+[Wed, 25 Nov 2020 23:26:43 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: hash_function] [FILE: /modules/login/funcs/main.php] [LINE: 20]
+[Wed, 25 Nov 2020 23:37:21 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught  --> Smarty Compiler: Syntax error in template "file:/var/www/html/learn_nukeviet/themes/qldt_default/modules/login/main.tpl"  on line 1 "<link rel="StyleSheet" href="{NV_BASE_SITEURL}themes/{TEMPLATE_CSS}/css/login.css" type="text/css" />" unknown tag 'TEMPLATE_CSS' <-- 
+  thrown] [FILE: /includes/sysplugins/smarty_internal_templatecompilerbase.php] [LINE: 1]
+[Wed, 25 Nov 2020 23:40:17 +0700] [localhost] [127.0.0.1] [Warning(2): Use of undefined constant TEMPLATE_CSS - assumed 'TEMPLATE_CSS' (this will throw an Error in a future version of PHP)] [FILE: /modules/login/funcs/main.php] [LINE: 21]
+[Wed, 25 Nov 2020 23:40:17 +0700] [localhost] [127.0.0.1] [Notice(8): Array to string conversion] [FILE: /modules/login/funcs/main.php] [LINE: 21]
+[Wed, 25 Nov 2020 23:41:18 +0700] [localhost] [127.0.0.1] [Warning(2): Use of undefined constant teamplate_css - assumed 'teamplate_css' (this will throw an Error in a future version of PHP)] [FILE: /modules/login/funcs/main.php] [LINE: 22]
+[Wed, 25 Nov 2020 23:47:08 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: css] [FILE: /templates_c/49544fa8d06bee43c18e502eea99b456283d4ceb_0.file.main.tpl.php] [LINE: 24]
+[Thu, 26 Nov 2020 00:17:02 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'learn_nukeviet.tbl_user' doesn't exist in /var/www/html/learn_nukeviet/vendor/vinades/nukeviet/Core/Database.php:495
+Stack trace:
+#0 /var/www/html/learn_nukeviet/vendor/vinades/nukeviet/Core/Database.php(495): PDO->query()
+#1 /var/www/html/learn_nukeviet/modules/login/funcs/main.php(20): NukeViet\Core\Database->query()
+#2 /var/www/html/learn_nukeviet/index.php(353): require('/var/www/html/l...')
+#3 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 495]
+[Thu, 26 Nov 2020 00:21:43 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: scrypt] [FILE: /modules/login/funcs/main.php] [LINE: 22]
+[Thu, 26 Nov 2020 00:21:43 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Call to a member function validate_password() on null in /var/www/html/learn_nukeviet/modules/login/funcs/main.php:22
+Stack trace:
+#0 /var/www/html/learn_nukeviet/index.php(353): require()
+#1 {main}
+  thrown] [FILE: /modules/login/funcs/main.php] [LINE: 22]

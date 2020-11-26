@@ -62,7 +62,6 @@ if ($global_config['referer_blocker'] and $client_info['is_myreferer'] === 0 and
 if ($nv_Request->isset_request(NV_NAME_VARIABLE, 'get') or $nv_Request->isset_request(NV_NAME_VARIABLE, 'post')) {
     $home = 0;
     $module_name = $nv_Request->get_string(NV_NAME_VARIABLE, 'post,get');
-
     if (empty($module_name)) {
         $module_name = $global_config['rewrite_op_mod'];
     } elseif ($module_name == 'nv-preview-theme') {
@@ -104,7 +103,6 @@ if (preg_match($global_config['check_module'], $module_name)) {
         $op = ($op == 'main') ? $module_name : $module_name . '/' . $op;
         $module_name = $global_config['rewrite_op_mod'];
     }
-
     // Kiểm tra module có trong hệ thống hay không
     if (isset($site_mods[$module_name])) {
         // Global variable for module

@@ -997,7 +997,7 @@ class Request
      * @param mixed $string
      * @return
      */
-    private function decodeCookie($string)
+    public function decodeCookie($string)
     {
         $string = strtr($string, '-_,', '+/=');
         $iv = substr($this->cookie_key, 0, 16);
@@ -1014,7 +1014,7 @@ class Request
      * @param bool $filter
      * @return
      */
-    private function get_value($name, $mode = null, $default = null, $decode = true, $filter = true)
+    public function get_value($name, $mode = null, $default = null, $decode = true, $filter = true)
     {
         $modes = $this->parse_mode($mode);
         foreach ($modes as $mode) {
