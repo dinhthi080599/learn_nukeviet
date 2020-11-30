@@ -1,0 +1,4 @@
+[Sun, 29 Nov 2020 19:06:19 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: nv4s_q71FyH_user] [FILE: /includes/functions.php] [LINE: 349]
+[Sun, 29 Nov 2020 19:06:19 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: nv4s_q71FyH_login_false] [FILE: /includes/functions.php] [LINE: 335]
+[Sun, 29 Nov 2020 19:06:48 +0700] [localhost] [127.0.0.1] [Notice(8): Trying to access array offset on value of type bool] [FILE: /modules/login/funcs/main.php] [LINE: 34]
+[Sun, 29 Nov 2020 19:06:48 +0700] [localhost] [127.0.0.1] [Warning(2): hash_equals(): Expected known_string to be a string, null given] [FILE: /vendor/vinades/nukeviet/Core/Encryption.php] [LINE: 114]
