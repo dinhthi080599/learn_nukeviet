@@ -1,0 +1,6 @@
+TIME: Fri, 04 Dec 2020 00:07:46 +0700
+IP: 127.0.0.1
+INFO: User Error(256): Your request is blocked
+FILE: /vendor/vinades/nukeviet/Core/Request.php
+LINE: 451
+USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36

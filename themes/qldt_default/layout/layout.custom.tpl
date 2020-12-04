@@ -6,7 +6,7 @@
 </div>
 <div class="row m-0">
     <div class="col-sm-12 col-md-18 col-sm-push-6 col-md-push-6">
-        <div class="pt-80 pl-20 pr-20">
+        <div class="pt-20 pl-20 pr-20">
             [TOP]
             {MODULE_CONTENT}
             [BOTTOM]

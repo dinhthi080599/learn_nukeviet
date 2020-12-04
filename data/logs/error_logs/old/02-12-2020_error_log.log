@@ -1,0 +1,76 @@
+[Wed, 02 Dec 2020 09:36:19 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: nv4s_q71FyH_user] [FILE: /includes/functions.php] [LINE: 349]
+[Wed, 02 Dec 2020 09:36:19 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: nv4s_q71FyH_login_false] [FILE: /includes/functions.php] [LINE: 335]
+[Wed, 02 Dec 2020 09:37:20 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_agent] [FILE: /modules/login/funcs/main.php] [LINE: 43]
+[Wed, 02 Dec 2020 09:37:20 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_ip] [FILE: /modules/login/funcs/main.php] [LINE: 45]
+[Wed, 02 Dec 2020 09:37:20 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_login] [FILE: /modules/login/funcs/main.php] [LINE: 47]
+[Wed, 02 Dec 2020 12:11:02 +0700] [localhost] [127.0.0.1] [User Notice(1024): PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE nv4_vi_qldt_monhoc(
+	ma_monhoc int AUTO_INCREMENT PRIMARY KEY NOT ' at line 2
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/html/learn_nukeviet/vendor/vinades/nukeviet/Core/Database.php
+    [line:protected] => 495
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/html/learn_nukeviet/vendor/vinades/nukeviet/Core/Database.php
+                    [line] => 495
+                    [function] => query
+                    [class] => PDO
+                    [type] => ->
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/html/learn_nukeviet/admin/modules/functions.php
+                    [line] => 191
+                    [function] => query
+                    [class] => NukeViet\Core\Database
+                    [type] => ->
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/html/learn_nukeviet/admin/modules/setup.php
+                    [line] => 78
+                    [function] => nv_setup_data_module
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/html/learn_nukeviet/admin/index.php
+                    [line] => 178
+                    [args] => Array
+                        (
+                            [0] => /var/www/html/learn_nukeviet/admin/modules/setup.php
+                        )
+
+                    [function] => require
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE nv4_vi_qldt_monhoc(
+	ma_monhoc int AUTO_INCREMENT PRIMARY KEY NOT ' at line 2
+        )
+
+)
+] [FILE: /admin/modules/functions.php] [LINE: 193]
+[Wed, 02 Dec 2020 13:31:58 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: login_false] [FILE: /modules/qldt/funcs/main.php] [LINE: 75]
+[Wed, 02 Dec 2020 13:32:22 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: login_false] [FILE: /modules/qldt/funcs/main.php] [LINE: 76]
+[Wed, 02 Dec 2020 13:38:51 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: login_false] [FILE: /modules/qldt/funcs/main.php] [LINE: 28]
+[Wed, 02 Dec 2020 14:24:47 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: module] [FILE: /modules/qldt/funcs/main.php] [LINE: 11]
+[Wed, 02 Dec 2020 14:33:49 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: title] [FILE: /modules/qldt/funcs/main.php] [LINE: 22]
+[Wed, 02 Dec 2020 14:33:49 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: title] [FILE: /templates_c/91d1732cd333b3475623cc51d5de30f664e62a28_0.file.main.tpl.php] [LINE: 33]
+[Wed, 02 Dec 2020 14:36:24 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: css] [FILE: /templates_c/91d1732cd333b3475623cc51d5de30f664e62a28_0.file.main.tpl.php] [LINE: 27]
+[Wed, 02 Dec 2020 14:36:24 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: js] [FILE: /templates_c/91d1732cd333b3475623cc51d5de30f664e62a28_0.file.main.tpl.php] [LINE: 29]
+[Wed, 02 Dec 2020 21:28:49 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: css] [FILE: /templates_c/d81f991ffc1aa44312f41bda1dbfe8a8f0525212_0.file.monhoc.tpl.php] [LINE: 27]
+[Wed, 02 Dec 2020 21:28:49 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: js] [FILE: /templates_c/d81f991ffc1aa44312f41bda1dbfe8a8f0525212_0.file.monhoc.tpl.php] [LINE: 29]
+[Wed, 02 Dec 2020 21:50:19 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: monhoc] [FILE: /modules/qldt/funcs/monhoc.php] [LINE: 27]

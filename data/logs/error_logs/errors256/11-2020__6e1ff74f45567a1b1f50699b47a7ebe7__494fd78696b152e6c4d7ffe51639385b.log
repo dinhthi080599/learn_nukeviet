@@ -1,6 +1,0 @@
-TIME: Thu, 26 Nov 2020 09:51:19 +0700
-IP: 127.0.0.1
-INFO: User Error(256): Warning: Headers already sent
-FILE: /vendor/vinades/nukeviet/Core/Request.php
-LINE: 570
-USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36

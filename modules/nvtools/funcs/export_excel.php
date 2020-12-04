@@ -166,7 +166,7 @@ if (preg_match('/^[a-zA-Z0-9\_\-]+$/', $modname)) {
     }
     $xtpl->parse('main.form');
 } else {
-    $modules_exit = nv_scandir(NV_ROOTDIR . '/modules', $global_config['check_module']);
+    $modules_exit =  nv_scandir(NV_ROOTDIR . '/modules', $global_config['check_module']);
     foreach ($modules_exit as $mod_i) {
         $xtpl->assign('MODNAME', array(
             'value' => $mod_i,

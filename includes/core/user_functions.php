@@ -536,16 +536,14 @@ function nv_html_links($html = true)
 function nv_html_page_title($html = true)
 {
     global $home, $module_info, $op, $global_config, $page_title;
-
     if ($home) {
         $_title = $global_config['site_name'];
     } else {
         if (!isset($global_config['pageTitleMode']) or empty($global_config['pageTitleMode'])) {
             $global_config['pageTitleMode'] = 'pagetitle' . NV_TITLEBAR_DEFIS . 'sitename';
         }
-
         if (empty($page_title) and !preg_match('/(funcname|modulename|sitename)/i', $global_config['pageTitleMode'])) {
-            $_title = $module_info['funcs'][$op]['func_custom_name'] . NV_TITLEBAR_DEFIS . $module_info['custom_title'];
+            $_title = $module_info['custom_title'];
         } else {
             $_title = preg_replace(array(
                 '/pagetitle/i',

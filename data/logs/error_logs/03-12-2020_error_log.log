@@ -1,0 +1,45 @@
+[Thu, 03 Dec 2020 08:47:27 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: nv4s_q71FyH_user] [FILE: /includes/functions.php] [LINE: 349]
+[Thu, 03 Dec 2020 08:47:27 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: nv4s_q71FyH_login_false] [FILE: /includes/functions.php] [LINE: 335]
+[Thu, 03 Dec 2020 08:47:34 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_agent] [FILE: /modules/login/funcs/main.php] [LINE: 43]
+[Thu, 03 Dec 2020 08:47:34 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_ip] [FILE: /modules/login/funcs/main.php] [LINE: 45]
+[Thu, 03 Dec 2020 08:47:34 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_last_login] [FILE: /modules/login/funcs/main.php] [LINE: 47]
+[Thu, 03 Dec 2020 08:47:36 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: css] [FILE: /templates_c/91d1732cd333b3475623cc51d5de30f664e62a28_0.file.main.tpl.php] [LINE: 27]
+[Thu, 03 Dec 2020 08:47:36 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: js] [FILE: /templates_c/91d1732cd333b3475623cc51d5de30f664e62a28_0.file.main.tpl.php] [LINE: 29]
+[Thu, 03 Dec 2020 08:47:37 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: css] [FILE: /templates_c/d81f991ffc1aa44312f41bda1dbfe8a8f0525212_0.file.monhoc.tpl.php] [LINE: 27]
+[Thu, 03 Dec 2020 08:47:37 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: js] [FILE: /templates_c/d81f991ffc1aa44312f41bda1dbfe8a8f0525212_0.file.monhoc.tpl.php] [LINE: 29]
+[Thu, 03 Dec 2020 21:31:27 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: css] [FILE: /templates_c/1702f9bd527aa708a93697674b334216a8ec31d0_0.file.themsv.tpl.php] [LINE: 27]
+[Thu, 03 Dec 2020 21:31:27 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: js] [FILE: /templates_c/1702f9bd527aa708a93697674b334216a8ec31d0_0.file.themsv.tpl.php] [LINE: 29]
+[Thu, 03 Dec 2020 22:47:30 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught  --> Smarty Compiler: Syntax error in template "file:/var/www/html/learn_nukeviet/themes/qldt_default/modules/qldt/main.tpl"  on line 13 "<a class="icon-17" href="{b/?language=vi&nv=qldt&op=themsv" title="Thêm sinh viên">"  - Unexpected "?" <-- 
+  thrown] [FILE: /includes/sysplugins/smarty_internal_templatecompilerbase.php] [LINE: 13]
+[Thu, 03 Dec 2020 22:47:49 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Object of class Smarty could not be converted to string in /var/www/html/learn_nukeviet/modules/qldt/theme.php:225
+Stack trace:
+#0 /var/www/html/learn_nukeviet/modules/qldt/funcs/themsv.php(24): nv_theme_smarty()
+#1 /var/www/html/learn_nukeviet/index.php(353): require('/var/www/html/l...')
+#2 {main}
+  thrown] [FILE: /modules/qldt/theme.php] [LINE: 225]
+[Thu, 03 Dec 2020 22:48:30 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: url] [FILE: /templates_c/91d1732cd333b3475623cc51d5de30f664e62a28_0.file.main.tpl.php] [LINE: 41]
+[Thu, 03 Dec 2020 22:53:12 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: url] [FILE: /templates_c/91d1732cd333b3475623cc51d5de30f664e62a28_0.file.main.tpl.php] [LINE: 40]
+[Thu, 03 Dec 2020 23:13:21 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: config] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 15]
+[Thu, 03 Dec 2020 23:48:04 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: gioitinh_sv] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 28]
+[Thu, 03 Dec 2020 23:48:04 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_oauth_error_savenew] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 31]
+[Fri, 04 Dec 2020 00:07:36 +0700] [localhost] [127.0.0.1] [Warning(2): require_once(/var/www/html/learn_nukeviet/includes/class/upload.class.php): failed to open stream: No such file or directory] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 25]
+[Fri, 04 Dec 2020 00:07:46 +0700] [localhost] [127.0.0.1] [User Error(256): Your request is blocked] [FILE: /vendor/vinades/nukeviet/Core/Request.php] [LINE: 451]
+[Fri, 04 Dec 2020 00:07:55 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined variable: userfile] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 25]
+[Fri, 04 Dec 2020 00:08:45 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Class 'upload' not found in /var/www/html/learn_nukeviet/modules/qldt/funcs/themsv.php:26
+Stack trace:
+#0 /var/www/html/learn_nukeviet/index.php(353): require()
+#1 {main}
+  thrown] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 26]
+[Fri, 04 Dec 2020 00:13:34 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: anh_sv] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 26]
+[Fri, 04 Dec 2020 00:36:09 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught Error: Call to undefined function NukeViet\Files\Upload() in /var/www/html/learn_nukeviet/modules/qldt/funcs/themsv.php:25
+Stack trace:
+#0 /var/www/html/learn_nukeviet/index.php(353): require()
+#1 {main}
+  thrown] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 25]
+[Fri, 04 Dec 2020 00:37:37 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_oauth_error_savenew] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 34]
+[Fri, 04 Dec 2020 00:38:12 +0700] [localhost] [127.0.0.1] [User Notice(1024): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'tbl_qldt_sinhvien.PRIMARY'] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 120]
+[Fri, 04 Dec 2020 00:39:01 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_oauth_error_savenew] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 29]
+[Fri, 04 Dec 2020 00:40:52 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: imageforswf] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 27]
+[Fri, 04 Dec 2020 00:40:52 +0700] [localhost] [127.0.0.1] [Warning(2): unlink(): No such file or directory] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 27]
+[Fri, 04 Dec 2020 00:40:52 +0700] [localhost] [127.0.0.1] [Notice(8): Undefined index: admin_oauth_error_savenew] [FILE: /modules/qldt/funcs/themsv.php] [LINE: 35]
+[Fri, 04 Dec 2020 00:48:19 +0700] [localhost] [127.0.0.1] [Warning(2): chmod(): Operation not permitted] [FILE: /vendor/vinades/nukeviet/Files/Upload.php] [LINE: 879]
