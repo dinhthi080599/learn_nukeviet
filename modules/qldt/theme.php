@@ -57,6 +57,29 @@ function nv_theme_qldt_lopmon($array_data)
 }
 
 /**
+ * nv_theme_qldt_lopmon()
+ * 
+ * @param mixed $array_data
+ * @return
+ */
+function nv_theme_qldt_lophanhchinh($array_data)
+{
+    global $module_info, $lang_module, $lang_global, $op;
+
+    $xtpl = new XTemplate($op . '.tpl', NV_ROOTDIR . '/themes/' . $module_info['template'] . '/modules/' . $module_info['module_theme']);
+    $xtpl->assign('LANG', $lang_module);
+    $xtpl->assign('GLANG', $lang_global);
+
+    //------------------
+    // Viết code vào đây
+    //------------------
+
+    $xtpl->parse('main');
+    return $xtpl->text('main');
+}
+
+
+/**
  * nv_theme_qldt_sv_lopmon()
  * 
  * @param mixed $array_data
@@ -213,8 +236,8 @@ function nv_theme_qldt_themsv($array_data)
  * @param mixed $array_data
  * @return
  */
-function nv_theme_smarty($array_data)
-{
+function nv_theme_smarty($data)
+{   
     global $module_info, $lang_module, $lang_global, $op;
     include NV_ROOTDIR . '/includes/Smarty.class.php';
     $smarty = new Smarty();
@@ -225,7 +248,7 @@ function nv_theme_smarty($array_data)
     $smarty->assign('css', $css); 
     $smarty->assign('js', $js); 
     $smarty->assign('url', $url); 
-    $smarty->assign('title', $module_info['funcs'][$op]['func_custom_name']);
+    $smarty->assign('title', $data['tieude']);
     $smarty->assign('data', $data); 
     $contents = $smarty->fetch($op.'.tpl');
     return $contents;

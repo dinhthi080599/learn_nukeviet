@@ -3,78 +3,60 @@
 {$data.css}
 {$data.js}
 <div class="card">
-<h2>{$title}</h2>
+  <h2>{$title}</h2>
     <div class="card-content">
         <div class="content">
             <div class="row">
-            <h2 class="text-center">Nhập điểm quá trình cho sinh viên</h2>
+                <button onclick="addClick()" class="btn btn-outline-info" type="button" data-toggle="modal" data-target="#exampleModal">
+                    Thêm lớp hành chính
+                </button>
             </div>
-            <h3> Chọn lớp</h3>
-            <form method="post">
-            <div class="row">
-              <div class="col-md-8">
-                <select id="cars" class="form-control" name="lopmon">
-                    <option value="0">--Chọn lớp --</option>
-                    {foreach $data.danhsachlop as $key => $value}
-                      <option value="{$value.ma_lopmon}">{$value.ten_lopmon}</option>
-                    {/foreach}
-                </select>
-              </div>
-              <div class="col-md-4">
-                <button class="btn btn-success" name="xemdanhsach" value="xemdanhsach">Xem</button>
-              </div>
-            </div>
-            </form>
             <nav class="icon-bar">
                 <ul class="soc"></ul>   
             </nav>
             </div>
-             <form method="POST">
         <div class="table-responsive">
+            <form method="POST">
             <table class="table table-striped table-bordered table-hover">
-                <caption><em class="fa fa-file-text-o">&nbsp;</em>Danh sách sinh viên trong lớp môn</caption>
+                <caption><em class="fa fa-file-text-o">&nbsp;</em>Danh sách lớp hành chính</caption>
                 <thead>
                     <tr>
                         <th style="width:6%"><a href="">STT</a></th>
-                        <th class="w50"><a href="">Tên sinh viên</a></th>
-                        <th class="w50"><a href="">Ngày sinh</a></th>
-                        <th class="w50"><a href="">Số điện thoại</a></th>
-                        <th class="w50"><a href="">Giới tính</a></th>
-                        <th class="w50"><a href="">CMND</a></th>
-                        <th class="text-center" style="width:11%">Chuyên cần</th>
-                        <th class="text-center" style="width:11%">Quá trình</th>
+                        <th class="w50"><a href="">Tên lớp</a></th>
+                        <th class="text-center" style="width:11%">Tác vụ</th>
                     </tr>
                 </thead>
                 <tbody>
-                  {foreach $data['danhsachsv'] as $key => $dssv}
+                  {foreach $data['danhsachlop'] as $key => $dslop}
                     <tr>
                         <td class="align-middle">{$key+1}</td>
-                        <td>{$dssv.ten_sv}</td>
-                        <td>{$dssv.ngaysinh}</td>
-                        <td>{$dssv.sdt}</td>
-                        <td>{$dssv.gioitinh}</td>
-                        <td>{$dssv.cmnd}</td>
-                        <td><input class="form-control" name="diemchuyencan[{$dssv.ma_sv}]"></td>
-                        <td><input class="form-control" name="diemquatrinh[][{$dssv.ma_sv}]"></td>
+                        <td>{$dslop.ten_lop}</td>
+                        <td>
+                          <button type="button" 
+                                  onclick="editClick(this)" 
+                                  data-toggle="modal"
+                                  data-tenlop="{$dslop.ten_lop}" 
+                                  data-malop="{$dslop.ma_lop}" 
+                                  data-target="#exampleModal" 
+                                  class="btn btn-xs btn-warning">
+                                  <em class="fa fa-edit"></em>
+                          </button>
+
+                          <button type="submit" 
+                                  class="btn btn-xs btn-danger" 
+                                  name="xoalop"
+                                  value="{$dslop.ma_lop}">
+                                  <em class="fa fa-trash-o"></em>
+                          </button>
+
+                        </td>
                     </tr>
                   {/foreach}
                 </tbody>
-              
-                <tfoot>
-                    <tr>
-                       
-                    </tr>
-                </tfoot>
-            
             </table>
-            <div class="text-right">
-            <button type="submit" class="btn btn-primary" value="luudiem" name="luudiem">Lưu</button>
-            <button class="btn btn-basic">Hủy</button>
-            </div>
-    </form>
-        </div>
-    </div>
+        </form>
 </div>
+
 <form method="post">
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="lalelModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -103,8 +85,8 @@
       </div>
     </div>
   </div>
-
-  </form>
+</form>
+  
 <script>
 function addClick()
 {

@@ -51,7 +51,9 @@ if($them_sv == 'them_sv')
 $page_title = $module_info['site_title'];
 $key_words = $module_info['keywords'];
 
-$array_data = [];
+$array_data = array(
+    'tieude' => "Thêm sinh viên"
+);
 
 //------------------
 // Viết code vào đây

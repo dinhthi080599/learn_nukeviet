@@ -7,21 +7,24 @@
     <div class="card-content">
         <div class="content">
             <div class="row">
-            <h2 class="text-center">Nhập điểm quá trình cho sinh viên</h2>
+            <h2 class="text-center">Đưa sinh viên vào danh sách thi</h2>
             </div>
-            <h3> Chọn lớp</h3>
             <form method="post">
             <div class="row">
               <div class="col-md-8">
+                <h3> Chọn kiểu sắp xếp</h3>
                 <select id="cars" class="form-control" name="lopmon">
-                    <option value="0">--Chọn lớp --</option>
-                    {foreach $data.danhsachlop as $key => $value}
-                      <option value="{$value.ma_lopmon}">{$value.ten_lopmon}</option>
-                    {/foreach}
+                      <option value="sxtheoten">Sắp xếp theo tên</option>
+                      <option value="sxtheolop">Sắp xếp theo lớp</option>
                 </select>
               </div>
+              <div class="col-md-8">
+                <h3> Số sv trong mỗi danh sách</h3>
+                <input type="number" class="form-control">
+              </div>
               <div class="col-md-4">
-                <button class="btn btn-success" name="xemdanhsach" value="xemdanhsach">Xem</button>
+                <h3> Tác vụ</h3>
+                <button class="btn btn-success" name="xemdanhsach" value="xemdanhsach">Tạo danh sách thi</button>
               </div>
             </div>
             </form>
@@ -30,6 +33,36 @@
             </nav>
             </div>
              <form method="POST">
+              
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+            <caption><em class="fa fa-file-text-o">&nbsp;</em>Danh sách lớp đã tạo</caption>
+                <thead>
+                    <tr>
+                        <th style="width:6%"><a href="">STT</a></th>
+                        <th class="w50"><a href="">Tên lớp</a></th>
+                        <th class="w50"><a href="">Số sinh viên</a></th>                        
+                        <th class="text-center" style="width:10%">Tác vụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  {* {foreach $data['danhsachsv'] as $key => $dssv} *}
+                    <tr>
+                        <td class="align-middle">{$key+1}</td>
+                        <td>{$dssv.ten_sv}</td>
+                        <td>{$dssv.ngaysinh}</td>
+                        <td><a class="btn btn-success">Xem</a></td>
+                    </tr>
+                  {* {/foreach} *}
+                </tbody>
+              
+                <tfoot>
+                    <tr>
+                       
+                    </tr>
+                </tfoot>
+            </table>
+
         <div class="table-responsive">
             <table class="table table-striped table-bordered table-hover">
                 <caption><em class="fa fa-file-text-o">&nbsp;</em>Danh sách sinh viên trong lớp môn</caption>
@@ -54,8 +87,8 @@
                         <td>{$dssv.sdt}</td>
                         <td>{$dssv.gioitinh}</td>
                         <td>{$dssv.cmnd}</td>
-                        <td><input class="form-control" name="diemchuyencan[{$dssv.ma_sv}]"></td>
-                        <td><input class="form-control" name="diemquatrinh[][{$dssv.ma_sv}]"></td>
+                        <td><input class="form-control"></td>
+                        <td><input class="form-control"></td>
                     </tr>
                   {/foreach}
                 </tbody>
@@ -68,8 +101,6 @@
             
             </table>
             <div class="text-right">
-            <button type="submit" class="btn btn-primary" value="luudiem" name="luudiem">Lưu</button>
-            <button class="btn btn-basic">Hủy</button>
             </div>
     </form>
         </div>

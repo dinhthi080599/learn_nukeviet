@@ -14,12 +14,12 @@ if (!defined('NV_MAINFILE')) {
 
 $module_version = [
     'name' => 'Qldt',
-    'modfuncs' => 'main,lopmon,sv_lopmon,chitiet-lopmon,nhapdiem,monhoc,import-sinhvien,baocao,themsv',
-    'change_alias' => 'main,lopmon,sv_lopmon,chitiet-lopmon,nhapdiem,monhoc,import-sinhvien,baocao,themsv',
-    'submenu' => 'chitiet-lopmon,nhapdiem,monhoc,import-sinhvien,baocao,themsv',
+    'modfuncs' => 'duasvdsthi,main,lophanhchinh,lopmon,sv_lopmon,chitiet-lopmon,nhapdiem,monhoc,import-sinhvien,baocao,themsv',
+    'change_alias' => 'duasvdsthi,main,lophanhchinh,lopmon,sv_lopmon,chitiet-lopmon,nhapdiem,monhoc,import-sinhvien,baocao,themsv',
+    'submenu' => 'duasvdsthi,chitiet-lopmon,nhapdiem,monhoc,import-sinhvien,baocao,themsv,lophanhchinh',
     'is_sysmod' => 0,
     'virtual' => 1,
-    'version' => '1.0.01',
+    'version' => '1.0.04',
     'date' => 'Wed, 2 Dec 2020 03:47:08 GMT',
     'author' => 'Thi Đình Nguyễn (ng.thi.0805@gmail.com)',
     'uploads_dir' => [$module_name],

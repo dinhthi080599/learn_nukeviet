@@ -22,33 +22,27 @@ $sql = 'SELECT ma_lopmon,ten_lopmon FROM '. $prefix . "_" . $module_file . "_lop
 $sth = $db->prepare($sql);
 $sth->execute();
 $danhsachlop = $sth->fetchAll();
-if($nv_Request->isset_request('luudiem', 'POST'))
-{
-    $diemchuyencan = $nv_Request->get_typed_array('diemchuyencan');
-    $diemquatrinh = $nv_Request->get_typed_array('diemquatrinh');
-}
 
 if($nv_Request->isset_request('xemdanhsach', 'POST'))
 {
 $malop = $nv_Request->get_title('lopmon');
-// Hiển thị dữ liệu
+//Hiển thị dữ liệu
 $sql = 'SELECT '.$prefix_name.'_sinhvien.ma_sv,ten_sv,ngaysinh,gioitinh,sdt,cmnd FROM '.$prefix_name. "_sinhvien 
 INNER JOIN ". $prefix_name . "_dangkymon 
 on ". $prefix_name . "_dangkymon.ma_sv  =  ". $prefix_name . "_sinhvien.ma_sv" . " where ma_lopmon=" .$malop;
-// pr($sql);
+
+//pr($sql);
 $sth = $db->prepare($sql);
 $sth->execute();
 $danhsachsv = $sth->fetchAll();
-
 //pr($danhsachlop);
 }
 
 $array_data = array(
     'danhsachsv' => $danhsachsv,
-    'danhsachlop' => $danhsachlop,
-    'diemchuyencan' => $diemchuyencan,
-    'diemquatrinh' => $diemquatrinh
+    'danhsachlop' => $danhsachlop
 );
+
 //------------------
 // Viết code vào đây
 //------------------
